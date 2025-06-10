@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 const WizardForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
-    // Personal Details
+   
     firstName: '',
     lastName: '',
     age: '',
     gender: '',
     
-    // Contact Information
+    
     email: '',
     phone: '',
     address: '',
     city: '',
     
-    // Feedback
+   
     rating: '',
     comments: '',
     subscribe: false
@@ -78,7 +78,7 @@ const WizardForm = () => {
   );
 };
 
-// Step 1: Personal Details
+
 const PersonalDetails = ({ formData, handleChange, nextStep }) => {
   const { firstName, lastName, age, gender } = formData;
   
@@ -142,7 +142,7 @@ const PersonalDetails = ({ formData, handleChange, nextStep }) => {
   );
 };
 
-// Step 2: Contact Information
+
 const ContactInformation = ({ formData, handleChange, nextStep, prevStep }) => {
   const { email, phone, address, city } = formData;
   
@@ -208,7 +208,7 @@ const ContactInformation = ({ formData, handleChange, nextStep, prevStep }) => {
   );
 };
 
-// Step 3: Feedback
+
 const Feedback = ({ formData, handleChange, prevStep, handleSubmit }) => {
   const { rating, comments, subscribe } = formData;
   
